@@ -357,3 +357,54 @@ nav ul li:last-child{
             grid-template-columns: repeat(2, 1fr);
         }
     } 
+
+    @media only screen and (max-width: 425px) {
+        
+        .logo_top {
+            position: relative;
+            transform: translate(10%, 0);
+        }
+
+        .five_big {
+            color: rgba(255, 253, 253, 0.66);
+        }
+        .header_container {
+            width: 75%;
+        }
+
+        .container-about {
+            flex-direction: column;
+        }
+
+        .about-us {
+     
+            margin: 0; 
+            height: 100%;
+        }
+
+        .about-left {
+            width: 100%;
+            position: relative;
+            left: 0;
+            margin-bottom: 5%;
+        }
+        .about-right {
+            position: relative;
+            right: 0;
+            margin-bottom: 5%;
+        }
+        .myPizza img {
+           width: 100%; 
+        }
+        .menu-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .map iframe {
+            width: 100%
+        }
+        .contact_container {
+            flex-direction: column;
+            height: 100vh;
+        }
+    } 

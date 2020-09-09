@@ -35,7 +35,7 @@ body {
 header {
     background-image: url(img/pizza2.png);
     background-position: 25% 75%;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     height: 85vh;
     display: flex;
     flex-direction: column;
@@ -148,6 +148,8 @@ nav ul li:last-child{
 
 .about-left {
     width: 52%;
+    position: absolute;
+    left: 10%;
     text-align: center;
     z-index: 2;
     align-self: center;
@@ -165,7 +167,7 @@ nav ul li:last-child{
 
 .about-right{
     position: absolute;
-    right: 4%;
+    right: 10%;
 }
 
 /* Slideshow container */
@@ -179,6 +181,7 @@ nav ul li:last-child{
       max-height: 100vh;
       height: 750px;
       border-radius: 20px;
+      /* width: 80%; */
   } 
 
   .active {
@@ -334,3 +337,23 @@ nav ul li:last-child{
         letter-spacing: 0.15em;
         color: rgba(255, 255, 255, 0.4);
     }
+
+    @media only screen and (max-width: 1680px) { 
+        
+        .menu_item{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: #FFFFFF;
+            border-radius: 20px;
+            height: 550px;
+            width: 100%;
+        }
+
+    }
+    @media only screen and (max-width: 1024px) {
+        .menu-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } 

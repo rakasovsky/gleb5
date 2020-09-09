@@ -283,7 +283,9 @@ nav ul li:last-child{
     /* CONTACTS */
     .contacts {
         background: #E5E5E5;
-        background-image: url("img/l_pizza.png");
+        background-image: url("img/contact_pizza2.png"),url("img/contact_pizza2.png");
+        background-position: 0% 5%, 95% 50%;
+        пbackground-size: 10em, 25em;
         background-repeat: no-repeat;
     }
     .contact_container{
